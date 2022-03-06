@@ -12,13 +12,42 @@
             <button class="start">Start Quiz</button>
         </div>
 
-        <div class="buttons">
-            <button id="previous">Previous</button>
-            <button id="next">Next</button>
-            <button id="sumbit">Submit Quiz</button>
+        <div id="quiz-container">
+            <div class="questions">
+                <h2 id="question">
+                    <ol type="A">
+                        <li class="option"><span id="option0"></span></li>
+                        <li class="option"><span id="option1"></span></li>
+                        <li class="option"><span id="option2"></span></li>
+                        <li class="option"><span id="option3"></span></li>
+                    </ol>
+                    <h4 id="stat"></h4>
+                </h2>
+            </div>
+
+            <div class="buttons">
+                <button type="button" class="next"></button>
+            </div>
+
+            <div id="scoreboard">
+                <h2 id="score-title">Your Score</h2>
+                <h2 id="score"></h2>
+                <button type="button" id="score-btn">Go Back</button>
+                <button type="button" id="highschore">High Scores</button>
+            </div>
+
+            <div id="answers">
+                <h2>Answers</h2>
+                <ol type="1">
+
+                </ol>
+                <button type="button" id="score-btn">Go Back</button>
+            </div>
+
+    
+
+
         </div>
-
-
         <script src="./script.js"></script>
     </body>
 </html>

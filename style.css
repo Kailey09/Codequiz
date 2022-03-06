@@ -1,8 +1,8 @@
 :root {
     --primary-color: white;
-    --scondary-color: rgba(13, 9, 238, 0.945);
+    --scondary-color: rgba(9, 136, 255, 0.945);
     --tertiary-color: rgba(21, 247, 255, 0.87);
-    --quarternary-color: rgb(20, 161, 255);
+    --quarternary-color: rgb(153, 213, 253);
 }
 * {
     box-sizing: border-box;
@@ -12,7 +12,7 @@
     font-size: 18px;
 }
 body {
-    background-color: white;
+    background-color: rgb(204, 229, 233)
 }
 
 #intro {
@@ -28,8 +28,54 @@ h1 {
 .start {
     color: var(--quarternary-color);
     background-color: var(--primary-color);
+    border-color: var(--primary-color);
 }
 .start:hover {
     background-color: var(--scondary-color);
 }
 
+#question {
+    color: var(--quarternary-color);
+    font-size: 25px;
+    margin: 10px;
+    padding: 10px;
+
+}
+
+#next {
+    position: relative;
+    margin: 7px;
+    background-color: var(--primary-color);
+    color: var(--quarternary-color);
+    border-color: var(--primary-color);
+
+
+}
+
+#next:hover {
+    background-color:var(--scondary-color);
+}
+
+div h2 {
+    color: var(--primary-color);
+    padding: 30px;
+    margin: 20px;
+    text-align: center;
+    font-size: 25px;
+    
+}
+
+
+button {
+   background-color: var(--primary-color);
+   color: var(--quarternary-color);
+   border-color: var(--primary-color);
+}
+
+button:hover{
+    background-color: var(--scondary-color);
+}
+
+#scoreboard {
+    display: none;
+}

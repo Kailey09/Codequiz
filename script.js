@@ -5,13 +5,6 @@ var startButton = document.getElementById("start");
 var nextButton = document.getElementById("next");
 var previousButton = document.getElementById("previous");
 
-var buildQuiz = function() {
-
-};
-
-var showResults = function() {
-
-};
 
 var myQuestions = [
     {
@@ -69,6 +62,4 @@ var myQuestions = [
         correctAnswer: "3"
     }
 ]
-buildQuiz();
 
-submitButton.addEventListener("click", showResults);

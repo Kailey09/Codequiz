@@ -36,7 +36,37 @@ var myQuestions = [
     },
 
     {
-        question: ""
+        question: "Method that outputs a message to the web console is called a...",
+        answers: {
+            1: "Console.debug",
+            2: "Console.count",
+            3: "Console.log",
+            4: "Console.clear"
+        },
+        correctAnswer: "3"
+    },
+
+    {
+        question: "A symbol representing a quantity that assumes a range of values.",
+        answers: {
+            1:  "Object",
+            2: "Variable",
+            3: "Document",
+            4: "Property"
+        },
+        correctAnswer: "2"
+    },
+    
+
+    {
+        question: "A variable you declare outside of a function is called a what?",
+        answers: {
+            1: "Local Scope",
+            2: "Hoisting",
+            3: "Global Scope",
+            4: "Block Scope"
+        },
+        correctAnswer: "3"
     }
 ]
 buildQuiz();

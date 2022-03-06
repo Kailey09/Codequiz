@@ -25,7 +25,6 @@ var timeLeft = 75;
 var timerInterval;
 
 
-
 var myQuestions = [
     {
         question: "Which one is an primitive data type?",
@@ -57,6 +56,7 @@ var myQuestions = [
         option: [ "Local Scope", "Hoisting", "Global Scope", "Block Scope"],
         answer: "Global Scope"
     }
+
 ]
 
 var startTimer = function() {
@@ -69,24 +69,12 @@ var startTimer = function() {
 
 var displayQuestions = function() {
     question.innerHTML = "Q." + (currentQuestion+1) + " " + myQuestions[currentQuestion].question;
-    
-    // option0.textContent = myQuestions[currentQuestion].option[0];
-    // option1.textContent = myQuestions[currentQuestion].option[1];
-    // option2.textContent = myQuestions[currentQuestion].option[2];
-    // option3.textContent = myQuestions[currentQuestion].option[3];
 
     for( var i = 0; i < options.length; i++) {
         options[i].textContent = myQuestions[currentQuestion].option[i];
     }; 
 };
 
-var calculate = function(s) {
-    if (s.innerHTML === myQuestions[i].answer && score < question.length){
-        score = score + 1;
-    }
-
-
-}
 
 
 var nextQuestion = function() {
@@ -101,17 +89,13 @@ var nextQuestion = function() {
 
 };
 
-var localStorage = function () {
-
-
-}
 
 var endQuiz = function () {
     questions.style.display = "none";
     scoreBoard.style.display = "block";
 
     score = timeLeft;
-    alert("Your score is " + score)
+   alert("Your score is " + score)
 }
 
 
@@ -119,4 +103,5 @@ displayQuestions();
 startTimer();
 
 next.addEventListener("click", nextQuestion);
+option.addEventListener("submit",);
 
